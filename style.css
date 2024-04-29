@@ -1,0 +1,88 @@
+body, .time, .right-side, .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    min-height: 70vh;
+    background-color: #2e2e45;
+    ;
+}
+.digital-clock{
+    position: relative;
+    background-color: rgb(6, 12, 26);
+    color: white;
+    margin: 100px;
+    width: 400px;
+    padding: 20px 45px;
+    box-shadow: 0 0px 35px gold;
+    border-radius: 10px;
+}
+.date{
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    background: -webkit-linear-gradient(90deg, rgb(3, 226, 255), rgb(0, 255, 242));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+#hours{
+    font-weight: 600px;
+    padding: 0px 10px;
+    line-height: 125px;
+    font-size: 8em;
+    background: -webkit-linear-gradient(90deg, rgb(3, 255, 3), rgb(255, 196, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.right-side{
+    flex-direction: column;
+}
+#dots {
+    font-size: 4em;
+    transform: translateY(-3);
+    padding-top: 0px;
+}
+#minutes{
+    font-size: 5em;
+    font-weight: 500;
+    margin-left: 10px;
+    background: -webkit-linear-gradient(90deg, rgb(255, 146, 3), rgb(55, 0, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.right-down{
+    margin-left: 20px;
+}
+#period, #seconds{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 10px;
+}
+#period{
+    color: goldenrod;
+}
+@media only screen and (max-width: 572px){
+    .digital-clock{
+        padding: 20px 10px;
+        margin: 20px;
+    }
+    /*#hours  {
+        font-size: 5em;
+    }
+    #minutes{
+        font-size: 5em;
+        margin-left: 0px;
+    }
+    #dots{
+        font-size: 1.2em;
+    }
+    .time{
+        flex-wrap: nowrap;
+    }
+    #period, #seconds{
+        font-size: 1em;
+    }*/
+}
